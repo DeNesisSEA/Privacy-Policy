@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>PrivacyPolicyNightFallDE</title>
     <style>
       body {
@@ -15,12 +16,32 @@
         border: none;
         border-top: 2px solid red;
         height: 1px;
-        margin: 30px 0;
+        margin: 0 auto;
         width: 100%;
       }
       p {
         text-align: left;
-        width: 90%;
+        width: 100%;
+      }
+      #scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#scroll-to-top:hover {
+  background-color: #777;
+}
       }
     </style>
   </head>
