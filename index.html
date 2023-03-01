@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>PrivacyPolicyNightFallDE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
       body {
         margin: 0 auto;
@@ -26,23 +26,25 @@
       #scroll-to-top {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 50px;
+  right: 50px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 24px;
   border: none;
   outline: none;
-  background-color: #555;
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 20px;
   border-radius: 4px;
 }
 
-#scroll-to-top:hover {
-  background-color: #777;
+@media only screen and (max-width: 600px) {
+  #scroll-to-top {
+    font-size: 20px;
+    padding: 16px;
+  }
 }
-      }
     </style>
   </head>
   <body>
@@ -81,5 +83,24 @@
 <p style="text-align: right;" align="right"><span style="font-size: 10.5pt;"><span style="background: white;"><span style="font-family: 等线;"><span lang="EN-US" style="font-family: &amp;quot;"><span style="color: #333333;">DeNesis</span></span></span></span></span></p>
 <p style="text-align: right;" align="right"><span style="font-size: 10.5pt;"><span style="background: white;"><span style="font-family: 等线;"><span lang="EN-US" style="font-family: &amp;quot;"><span style="color: #333333;">Last Updated Date: March 1, 2023</span></span></span></span></span></p>
 <p style="text-align: right;" align="right"><span style="font-size: 10.5pt;"><span style="background: white;"><span style="font-family: 等线;"><span lang="EN-US" style="font-family: &amp;quot;"><span style="color: #333333;">Effective Date: March 1,  2023</span></span></span></span></span></p>
+
+    <button onclick="topFunction()" id="scroll-to-top" title="Go to top">Top</button>
+
+    <script>
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("scroll-to-top").style.display = "block";
+        } else {
+          document.getElementById("scroll-to-top").style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
