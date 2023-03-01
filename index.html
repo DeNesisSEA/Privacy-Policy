@@ -10,24 +10,11 @@
         text-align: center;
       }
       header {
-        text-align: left;
-      }
-      hr {
-        border: none;
-        border-top: 2px solid red;
-        height: 1px;
-        margin: 0 auto;
-        width: 100%;
-      }
-      p {
-        text-align: left;
-        width: 100%;
-      }
-      #scroll-to-top {
+        #scroll-to-top {
   display: none;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 20px;
+  right: 20px;
   z-index: 99;
   font-size: 24px;
   border: none;
@@ -45,6 +32,14 @@
     padding: 16px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  #scroll-to-top {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
     </style>
   </head>
   <body>
